@@ -49,10 +49,7 @@ $def with (contactos)
                             <a href="/contacto/${c['id']}" class="btn btn-sm btn-info">Ver</a>
                             <a href="/editar/${c['id']}" class="btn btn-sm btn-warning">Editar</a>
                             <form action="/borrar/${c['id']}" method="post" style="display:inline">
-                                <button type="submit" class="btn btn-sm btn-danger"
-                                    onclick="return confirm('¿Seguro que quieres borrar este contacto?')">
-                                    Borrar
-                                </button>
+                                <a href="/borrar/${c['id']}" class="btn btn-sm btn-danger">Borrar</a>
                             </form>
                         </td>
                     </tr>
